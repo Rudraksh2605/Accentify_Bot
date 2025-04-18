@@ -1,4 +1,7 @@
-Flask
-gTTS
+flask
+gtts
 google-generativeai
 langid
+flask-cors
+gunicorn
+python-dotenv

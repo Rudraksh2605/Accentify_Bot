@@ -1,7 +1,11 @@
 services:
   - type: web
-    name: chatbot-flask
-    env: python
-    plan: free
+    name: language-translator
+    runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
+    startCommand: gunicorn app:app
+    envVars:
+      - key: GEMINI_API_KEY
+        fromGroup: gemini-credentials
+      - key: PYTHON_VERSION
+        value: 3.9.7

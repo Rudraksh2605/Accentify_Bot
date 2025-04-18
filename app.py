@@ -15,7 +15,7 @@ CORS(app)  # Enable CORS for all routes
 
 # Configure Gemini
 genai.configure(api_key="AIzaSyDwEyFoPIr9nDJcUeM-Gn0qsR635IhXcu8")
-model = genai.GenerativeModel("gemini-1.5-pro")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 # Constants
 AUDIO_DIR = "audio_files"
